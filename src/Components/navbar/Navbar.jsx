@@ -16,8 +16,16 @@ const Navbar = () => {
                 <li>
                     <h1 className="opacity-100 text-red-300 m-5">Logo</h1>
                 </li>
-                <li className="hidden md:block m-5 ml-20 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">HOME</li>
-                <li className="hidden md:block m-5 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">ABOUT</li>
+                <li className="hidden md:block m-5 ml-20 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">
+                    <Link to='/'>
+                        HOME
+                    </Link>
+                </li>
+                <li className="hidden md:block m-5 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">
+                    <Link to='/about'>
+                        ABOUT  
+                    </Link>
+                </li>
                 <li className="hidden md:block m-5 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">CONTACT</li>
             </ul>
             <input placeholder="Search..." className="hidden md:block w-80 h-8 text-slate-900 opacity-90 mt-4 p-4 pl-6 rounded-3xl focus:outline-0 focus:opacity-100">

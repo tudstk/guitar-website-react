@@ -5,7 +5,7 @@ const Login = () => {
     return(
         <>
             <Navbar/>
-            <h1>Login route</h1>
+            <h1 className="mt-16">Login route</h1>
         </>
     );
 };

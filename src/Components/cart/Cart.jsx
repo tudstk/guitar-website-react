@@ -5,7 +5,7 @@ const Cart = () => {
     return (
         <>
             <Navbar/>
-            <h1>Cart Route</h1>
+            <h1 className="mt-16">Cart Route</h1>
         </>
     );
 };

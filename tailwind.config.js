@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       colors:{
         'navbar-black': '#1a1919',
+        'div-gray':'#121212',
+      },
+      height:{
+        '128': '32rem',
+        '144': '36rem',
       }
     },
   },
