@@ -7,6 +7,7 @@ import Cart from './Components/cart/Cart';
 import WelcomeSection from './Components/welcome/WelcomeSection';
 import About from './Components/about/About';
 import Products from './Components/products/Products';
+import React from 'react';
 
 function App() {
   return (
