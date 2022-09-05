@@ -7,6 +7,7 @@ import SignUp from './Components/signup/SignUp';
 import Cart from './Components/cart/Cart';
 import WelcomeSection from './Components/welcome/WelcomeSection';
 import About from './Components/about/About';
+import  Address from './Components/address/Address';
 import Products from './Components/products/Products';
 import React from 'react';
 
@@ -22,7 +23,8 @@ function App() {
           </div>
         }/>
         <Route path="/login" element={ <Login/> }/>
-        <Route path="/signup" element={<SignUp/>}/>
+        <Route path="/signup" element={ <SignUp/> }/>
+        <Route path="/address" element={ <Address/> }/>
         <Route path="/cart" element={ <Cart/> }/>
         <Route path="/about" element={ <About/> }/>
       </Routes>

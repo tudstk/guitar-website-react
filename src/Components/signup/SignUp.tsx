@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Formik, Form, Field, ErrorMessage, FormikHelpers, } from "formik";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Label from "./Label";
 import * as Yup from "yup";
 
@@ -25,10 +25,11 @@ const SignUpSchema = Yup.object().shape({
     confirmPassword:Yup.string().min(8, "Too short!").max(28, "Too long!").required("Required"),
 });
 
-const Login = () => {
-
+const SignUp = () => {
+    let navigate = useNavigate();
     const SignUpForm = async (values: SignUpValues, formik: FormikHelpers<SignUpValues>) => {
         console.log(values);
+        navigate('/address');
         // const { firstName, lastName, phoneNumber, email, password, confirmPassword } = values;
     };
     return(
@@ -44,8 +45,8 @@ const Login = () => {
                         <h2 className="text-center text-2xl font-bold">
                         Sign Up
                         </h2>
-                        <div className="flex flex-col md:flex-row">
-                            <div className="my-2 mr-3 flex flex-col">
+                        <div className="flex flex-col md:flex-row justify-between">
+                            <div className="my-2 flex flex-col">
                                 <Label text="First Name" required={true} htmlFor="firstName" />
                                 <Field
                                     id="firstName"
@@ -129,7 +130,7 @@ const Login = () => {
                             type="submit"
                             className="disabled:opacity-50 my-2 px-4 py-2 bg-blue-700 text-white transition-all duration-300"
                             >
-                            Sign Up
+                            Next
                         </button>
                         <div className="flex flex-col">
                             <h5 className="opacity-80">
@@ -146,4 +147,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignUp;
