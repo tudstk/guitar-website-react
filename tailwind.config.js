@@ -13,6 +13,10 @@ module.exports = {
         '128': '32rem',
         '144': '36rem',
       },
+      width:{
+        '120': '30rem',
+        '144': '36rem',
+      },
       fontFamily:{
         body:'Sora',
       }

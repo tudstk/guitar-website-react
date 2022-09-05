@@ -24,8 +24,8 @@ const Login = () => {
         const { email, password } = values;
     };
     return(
-        <>
-        
+        <div className="overflow-x-hidden overflow-y-hidden">
+            <Navbar/>
             <Formik
             initialValues={{ email: "", password: "" }}
             validationSchema={loginSchema}
@@ -33,7 +33,7 @@ const Login = () => {
             >
             {(formik) => (
                 <div className="bg-div-gray flex flex-col justify-center items-center w-screen h-screen">
-                    <Form className="mx-0 md:w-96 bg-gray-50 p-6 flex flex-col shadow-sm rounded-md max-w-full">
+                    <Form className="mx-0 w-72 md:w-96 bg-gray-50 p-6 flex flex-col shadow-sm rounded-md max-w-full">
                         <h2 className="text-center text-2xl font-bold">
                         Login
                         </h2>
@@ -68,20 +68,20 @@ const Login = () => {
                             type="submit"
                             className="disabled:opacity-50 my-2 px-4 py-2 bg-blue-700 text-white transition-all duration-300"
                             >
-                            Submit
+                            Log in
                         </button>
-                        <div className="flex flex-row">
+                        <div className="flex flex-col">
                             <h5 className="opacity-80">
                                 Don't have an account?
                             </h5>
-                            <Link to="/cart"> Sign up here!</Link>
+                            <Link to="/signup"> Sign up here!</Link>
                         </div>
                     </Form>
                 </div>
             )}
             </Formik>
           
-        </>
+        </div>
     );
 };
 
