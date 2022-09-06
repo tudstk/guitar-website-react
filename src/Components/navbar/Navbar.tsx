@@ -14,7 +14,7 @@ const Navbar = () => {
             </p> */}
             <ul className='flex flex-row justify-between content-center mr-2 md:ml-32'>
                 <li>
-                    <h1 className="opacity-100 text-red-300 m-5">Logo</h1>
+                    <h1 className="opacity-100 text-slate-400 m-5">Logo</h1>
                 </li>
                 <li className="hidden md:block m-5 ml-20 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">
                     <Link to='/'>
