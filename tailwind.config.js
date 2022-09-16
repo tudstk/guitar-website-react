@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors:{
         'navbar-black': '#1a1919',
+        'navbar-black-2':'#2e2c2c',
         'div-gray':'#121212',
       },
       height:{
@@ -19,6 +20,10 @@ module.exports = {
       },
       fontFamily:{
         body:'Sora',
+      },
+      borderWidth: {
+        '3': '2.5px',
+  
       }
     },
   },

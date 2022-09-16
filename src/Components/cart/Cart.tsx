@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 
-const Cart = () => {
+const Cartt = () => {
     return (
         <>
             <Navbar/>
@@ -10,4 +10,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default Cartt;
