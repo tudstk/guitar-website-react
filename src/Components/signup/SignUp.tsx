@@ -21,8 +21,8 @@ const SignUpSchema = Yup.object().shape({
     lastName:Yup.string().required("Required"),
     phoneNumber:Yup.string().min(10, "Too short").max(15,"Too long").required("Required"),
     email:Yup.string().email("Invalid email").required("Required"),
-    password:Yup.string().min(8, "Too short!").max(28, "Too long!").required("Required"),
-    confirmPassword:Yup.string().min(8, "Too short!").max(28, "Too long!").required("Required"),
+    password:Yup.string().min(6, "Too short!").max(26, "Too long!").required("Required"),
+    confirmPassword:Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match'),
 });
 
 const SignUp = () => {
@@ -41,7 +41,7 @@ const SignUp = () => {
             >
             {(formik) => (
                 <div className="bg-div-gray flex flex-col justify-center items-center w-screen md:h-screen">
-                    <Form className="mx-0 w-72 my-8 md:w-120 bg-gray-50 p-6 flex flex-col shadow-sm rounded-md max-w-full">
+                    <Form className="bg-navbar-black text-slate-300 mx-0 w-72 my-8 md:w-120 p-6 flex flex-col shadow-sm rounded-md max-w-full">
                         <h2 className="text-center text-2xl font-bold">
                         Sign Up
                         </h2>
@@ -50,12 +50,12 @@ const SignUp = () => {
                                 <Label text="First Name" required={true} htmlFor="firstName" />
                                 <Field
                                     id="firstName"
-                                    className="p-2 border-2 border-gray-400 rounded-sm"
+                                    className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                     name="firstName"
                                 ></Field>
                                 <ErrorMessage
                                     component="div"
-                                    className="text-red-700"
+                                    className="text-red-300"
                                     name="firstName"
                                 />
                             </div>
@@ -63,12 +63,12 @@ const SignUp = () => {
                                 <Label text="Last Name" required={true} htmlFor="lastName" />
                                 <Field
                                     id="lastName"
-                                    className="p-2 border-2 border-gray-400 rounded-sm"
+                                    className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                     name="lastName"
                                 ></Field>
                                 <ErrorMessage
                                     component="div"
-                                    className="text-red-700"
+                                    className="text-red-300"
                                     name="lastName"
                                 />
                             </div>
@@ -77,12 +77,12 @@ const SignUp = () => {
                             <Label text="Phone Number" required={true} htmlFor="phoneNumber" />
                             <Field
                                 id="phoneNumber"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                 name="phoneNumber"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="phoneNumber"
                             />
                         </div>
@@ -90,12 +90,12 @@ const SignUp = () => {
                             <Label text="Email" required={true} htmlFor="email" />
                             <Field
                                 id="email"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                 name="email"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="email"
                             />
                         </div>
@@ -103,12 +103,13 @@ const SignUp = () => {
                             <Label text="Password" required={true} htmlFor="password" />
                             <Field
                                 id="password"
-                                className="p-2 border-2 border-gray-400"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border"
                                 name="password"
+                                type="password"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="password"
                             />
                         </div>
@@ -116,12 +117,13 @@ const SignUp = () => {
                             <Label text="Confirm Password" required={true} htmlFor="confirmPassword" />
                             <Field
                                 id="confirmPassword"
-                                className="p-2 border-2 border-gray-400"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border"
                                 name="confirmPassword"
+                                type="password"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="confirmPassword"
                             />
                         </div>
@@ -136,7 +138,7 @@ const SignUp = () => {
                             <h5 className="opacity-80">
                                 Already have an account?
                             </h5>
-                            <Link to="/login"> Log in here!</Link>
+                            <Link to="/login" className="hover:text-slate-200"> Log in here!</Link>
                         </div>
                     </Form>
                 </div>

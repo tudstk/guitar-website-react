@@ -13,8 +13,8 @@ interface LoginValues{
 }
 
 const loginSchema = Yup.object().shape({
-    email:Yup.string().email("Invalid email").required("Required"),
-    password:Yup.string().min(8, "Too short!").max(28, "Too long!").required("Required"),
+    email:Yup.string().email("Invalid email"),
+    password:Yup.string(),
 });
 
 const Login = () => {
@@ -33,33 +33,33 @@ const Login = () => {
             >
             {(formik) => (
                 <div className="bg-div-gray flex flex-col justify-center items-center w-screen h-screen">
-                    <Form className="mx-0 w-72 md:w-96 bg-gray-50 p-6 flex flex-col shadow-sm rounded-md max-w-full">
+                    <Form className="bg-navbar-black text-slate-300 mx-0 w-72 md:w-96 p-6 flex flex-col shadow-sm rounded-md max-w-full">
                         <h2 className="text-center text-2xl font-bold">
                         Login
                         </h2>
                         <div className="my-2 flex flex-col">
-                            <Label text="Email" required={true} htmlFor="email" />
+                            <Label text="Email" htmlFor="email" />
                             <Field
                                 id="email"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="bg-navbar-black-2 border-label-border p-2 border-2 rounded-sm"
                                 name="email"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="email"
                             />
                         </div>
                         <div className="my-2 flex flex-col">
-                            <Label text="Password" required={true} htmlFor="password" />
+                            <Label text="Password" htmlFor="password" />
                             <Field
                                 id="password"
-                                className="p-2 border-2 border-gray-400"
+                                className="p-2 border-2 border-label-border bg-navbar-black-2"
                                 name="password"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="password"
                             />
                         </div>
@@ -74,7 +74,7 @@ const Login = () => {
                             <h5 className="opacity-80">
                                 Don't have an account?
                             </h5>
-                            <Link to="/signup"> Sign up here!</Link>
+                            <Link to="/signup" className="hover:text-slate-100"> Sign up here!</Link>
                         </div>
                     </Form>
                 </div>

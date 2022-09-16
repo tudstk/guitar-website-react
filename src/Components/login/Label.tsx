@@ -10,7 +10,7 @@ const Label = (props: {
     <>
       <label htmlFor={htmlFor}>
         <span className="font-bold">{text}</span>
-        {required && <span className="text-red-700">*</span>}
+        {required && <span className="text-gray-400">*</span>}
       </label>
     </>
   );

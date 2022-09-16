@@ -9,6 +9,7 @@ module.exports = {
         'navbar-black': '#1a1919',
         'navbar-black-2':'#2e2c2c',
         'div-gray':'#121212',
+        'label-border':'#171717',
       },
       height:{
         '128': '32rem',
