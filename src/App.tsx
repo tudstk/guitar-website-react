@@ -9,6 +9,7 @@ import WelcomeSection from './Components/welcome/WelcomeSection';
 import About from './Components/about/About';
 import Address from './Components/address/Address';
 import Products2 from './Components/products/Products2';
+import Footer from './Components/footer/Footer';
 import React from 'react';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Navbar setShow={setShow} size={cart.length}/>
             {show ? <WelcomeSection/> : null}
             {show ? (<Products2 handleClick={handleClick}/>) : (<Cart cart={cart} setCart={setCart} handleChange={handleChange}/>) }
+            {show ? <Footer/> : null}
           </div>
         }/>
         <Route path="/login" element={ <Login/> }/>

@@ -56,6 +56,7 @@ const Login = () => {
                                 id="password"
                                 className="p-2 border-2 border-label-border bg-navbar-black-2"
                                 name="password"
+                                type="password"
                             ></Field>
                             <ErrorMessage
                                 component="div"

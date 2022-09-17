@@ -8,6 +8,7 @@ module.exports = {
       colors:{
         'navbar-black': '#1a1919',
         'navbar-black-2':'#2e2c2c',
+        'footer-bg':'#0d0d0d',
         'div-gray':'#121212',
         'label-border':'#171717',
       },

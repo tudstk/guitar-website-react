@@ -39,13 +39,15 @@ const Cart = ({ cart, setCart, handleChange }:any) => {
               <button className='p-1.5 px-2 font-bold mr-2 bg-navbar-black rounded-sm hover:bg-navbar-black-2' onClick={() => handleChange(item, 1)}>+</button>
               <button className='ml-12 pr-8 text-red-300 hover:text-red-200' onClick={() => handleRemove(item.id)}>Remove</button>
             </div>
-            
           </div>
         ))}
         <div className="mt-8 text-lg">
           <span>Total price of your cart:</span>
           <span className='font-bold'> ${price}</span>
         </div>
+        <button className='w-60 h-12 mt-4 font-bold bg-blue-500 text-slate-200 rounded-lg hover:bg-blue-400'>
+           Proceed your payment
+        </button>
       </article>
     );
   };
