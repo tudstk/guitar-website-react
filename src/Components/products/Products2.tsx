@@ -6,7 +6,7 @@ const Products2 = ({handleClick}:any) => {
 
     return (
         <section className='bg-div-gray text-white mt-14 md:mt-0 w-screen overflow-hidden font-body'>
-            <h1 className="font-sans text-2xl mt-10 opacity-70 mb-8">Our latest products</h1>
+            <h1 className="font-sans italic text-3xl mt-10 opacity-70 mb-8">Our latest products</h1>
             <div className="flex items-center justify-center pb-16">
                 <div className="flex flex-col md:grid gap-8 grid-cols-4">
                 {
