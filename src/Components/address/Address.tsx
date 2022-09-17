@@ -39,7 +39,7 @@ const AddressSave = () => {
             >
             {(formik) => (
                 <div className="bg-div-gray flex flex-col justify-center items-center w-screen md:h-screen">
-                    <Form className="mx-0 w-72 my-8 md:w-120 bg-gray-50 p-6 flex flex-col shadow-sm rounded-md max-w-full">
+                    <Form className="bg-navbar-black text-slate-300 mx-0 w-72 my-8 md:w-120 p-6 flex flex-col shadow-sm rounded-md max-w-full">
                         <h2 className="text-center text-2xl font-bold">
                         Address
                         </h2>
@@ -47,12 +47,12 @@ const AddressSave = () => {
                             <Label text="Street" required={true} htmlFor="street" />
                              <Field
                                 id="street"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                 name="street"
                             ></Field>
                             <ErrorMessage
                                  component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="street"
                                 />
                             </div>
@@ -60,12 +60,12 @@ const AddressSave = () => {
                             <Label text="Details" htmlFor="details" />
                             <Field
                                 id="details"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                 name="details"
                                 ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="details"
                                />
                         </div>
@@ -73,12 +73,12 @@ const AddressSave = () => {
                             <Label text="City" required={true} htmlFor="city" />
                             <Field
                                 id="city"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                 name="city"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="city"
                             />
                         </div>
@@ -86,12 +86,12 @@ const AddressSave = () => {
                             <Label text="Country" required={true} htmlFor="country" />
                             <Field
                                 id="email"
-                                className="p-2 border-2 border-gray-400 rounded-sm"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border rounded-sm"
                                 name="country"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="country"
                             />
                         </div>
@@ -99,12 +99,12 @@ const AddressSave = () => {
                             <Label text="Zip Code" required={true} htmlFor="zipcode" />
                             <Field
                                 id="zipcode"
-                                className="p-2 border-2 border-gray-400"
+                                className="p-2 border-2 bg-navbar-black-2 border-label-border"
                                 name="zipcode"
                             ></Field>
                             <ErrorMessage
                                 component="div"
-                                className="text-red-700"
+                                className="text-red-300"
                                 name="zipcode"
                             />
                         </div>
