@@ -43,7 +43,9 @@ const Cart = ({ cart, setCart, handleChange }:any) => {
           <span>Total price of your cart:</span>
           <span className='font-bold'> ${price}</span>
         </div>
-        <button className='w-60 h-12 mt-4 font-bold bg-blue-500 text-slate-200 rounded-lg hover:bg-blue-400'>
+        <button 
+        className='w-60 h-12 mt-4 font-bold bg-blue-500 text-slate-200 rounded-lg hover:bg-blue-400 disabled:bg-neutral-400'
+        disabled={price===0}>
            Proceed your payment
         </button>
       </article>

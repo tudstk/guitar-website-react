@@ -16,7 +16,6 @@ const Products2 = ({handleClick}:any) => {
                 </div>
             </div>
         </section>
-        
     )
 }
 
