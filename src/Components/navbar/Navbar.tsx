@@ -8,7 +8,7 @@ import fbIcon from './fb.png';
 
 const Navbar = ({setShow, size}:any) => {
     return(
-        <div className='flex justify-between w-screen bg-navbar-black text-white sticky top-0 z-50 font-body text-sm'>
+        <div className='flex justify-between w-screen bg-navbar-black text-white fixed top-0 z-50 font-body text-sm'>
             {/* <p className='m-5 ml-6 md:ml-32'>
                 <h1 className="opacity-80">Guitar Shop</h1>
             </p> */}

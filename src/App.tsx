@@ -12,6 +12,9 @@ import Products2 from './Components/products/Products2';
 import Footer from './Components/footer/Footer';
 import News from './Components/news/News';
 import React from 'react';
+import SimpleSlider from './Components/slider/Slider';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
 
@@ -38,7 +41,8 @@ function App() {
         <Route path="/" element = {
           <div className="App">
             <Navbar setShow={setShow} size={cart.length}/>
-            {show ? <WelcomeSection/> : null}
+            {show ? <SimpleSlider/> : null}
+            {/* {show ? <WelcomeSection/> : null} */}
             {show ? (<Products2 handleClick={handleClick}/>) : (<Cart cart={cart} setCart={setCart} handleChange={handleChange}/>) }
             {show ? <News/> : null}
             {show ? <Footer/> : null}

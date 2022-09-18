@@ -2,6 +2,7 @@
   text-align: center;
   --tw-bg-opacity: 1;
     background-color: rgb(18 18 18 / var(--tw-bg-opacity));
+    overflow-x:hidden;
 }
 
 .App-logo {
