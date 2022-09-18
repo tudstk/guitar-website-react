@@ -20,6 +20,7 @@ module.exports = {
       width:{
         '120': '30rem',
         '144': '36rem',
+        'navic': '1.12rem',
       },
       fontFamily:{
         body:'Sora',

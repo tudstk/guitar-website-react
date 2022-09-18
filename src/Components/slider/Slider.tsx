@@ -6,8 +6,6 @@ import slide3 from './Solar-banner-A1-6ETCB.jpg';
 import slide4 from './pic3.jpg';
 import slide5 from './Solar-banner-all_new_batch_may18.jpg';
 
-
-
 const SimpleSlider = () => {
         const settings = {
             dots: true,
