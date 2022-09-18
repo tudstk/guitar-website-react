@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import slide1 from './pic3.jpg';
-import slide2 from './guitar-wp.jpg';
-import slide3 from './pic2.jpg';
+import slide1 from './V16Vinter.jpg';
+import slide2 from './Zgkis6lA.jpeg';
+import slide3 from './Solar-banner-A1-6ETCB.jpg';
+import slide4 from './pic3.jpg';
+import slide5 from './Solar-banner-all_new_batch_may18.jpg';
+
+
 
 const SimpleSlider = () => {
         const settings = {
@@ -29,14 +33,20 @@ const SimpleSlider = () => {
     return (
       <div>
         <Slider {...settings}>
-          <div className="h-172 text-white">
+          <div className="h-144 text-white">
             <img src={slide1} className='w-full h-full object-cover' alt=''/>
           </div>
-          <div className="h-172 text-white">
+          <div className="h-144 text-white">
             <img src={slide2} className='w-full h-full object-cover' alt=''/>
           </div>
-          <div className="h-172 text-white">
+          <div className="h-144 text-white">
             <img src={slide3} className='w-full h-full object-cover' alt=''/>
+          </div>
+          <div className="h-144 text-white">
+            <img src={slide4} className='w-full h-full object-cover' alt=''/>
+          </div>
+          <div className="h-144 text-white">
+            <img src={slide5} className='w-full h-full object-cover' alt=''/>
           </div>
         </Slider>
       </div>
