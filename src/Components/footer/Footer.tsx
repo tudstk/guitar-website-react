@@ -16,10 +16,14 @@ const Footer = () => {
             </ul>
             <ul className='flex flex-row justify-between content-center'>
                 <li className="ml-5 mr-2 my-6">
-                    <img src={ igIcon } alt="igIcon" className="md:block w-5 opacity-50 transition duration-150 hover:opacity-80 cursor-pointer ease-in"/>
+                    <a href="https://www.instagram.com/tudor_stroescu/" target="_blank" rel="noreferrer">
+                        <img src={ igIcon } alt="igIcon" className="md:block w-5 opacity-50 transition duration-150 hover:opacity-80 cursor-pointer ease-in"/>
+                    </a>
                 </li>
                 <li className="mr-5 ml-2 my-6">
-                    <img src={ fbIcon } alt="fbIcon" className="md:block w-5 opacity-50 transition duration-150 hover:opacity-80 cursor-pointer ease-in"/>
+                    <a href="https://www.facebook.com/stroescu.tudor/" target="_blank" rel="noreferrer">
+                        <img src={ fbIcon } alt="fbIcon" className="md:block w-5 opacity-50 transition duration-150 hover:opacity-80 cursor-pointer ease-in"/>
+                    </a>
                 </li>
             </ul>
             <h6 className='text-xs italic opacity-70'>Copyright ©  2022 Tudor Stroescu</h6>

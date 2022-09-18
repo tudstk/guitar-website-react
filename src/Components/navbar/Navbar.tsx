@@ -33,10 +33,14 @@ const Navbar = ({setShow, size}:any) => {
             <ul className='flex flex-row justify-between content-center mr-2 md:mr-32'>
                 
                 <li className="m-5">
-                    <img src={ igIcon } alt="igIcon" className="hidden md:block w-[1.125rem] opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in"/>
+                    <a href="https://www.instagram.com/tudor_stroescu/" target="_blank" rel="noreferrer">
+                        <img src={ igIcon } alt="igIcon" className="hidden md:block w-[1.125rem] opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in"/>
+                    </a>
                 </li>
                 <li className="m-5 ml-3">
-                    <img src={ fbIcon } alt="fbIcon" className="hidden md:block w-[1.125rem] opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in"/>
+                    <a href="https://www.facebook.com/stroescu.tudor/" target="_blank" rel="noreferrer">
+                        <img src={ fbIcon } alt="fbIcon" className="hidden md:block w-[1.125rem] opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in"/>
+                    </a>
                 </li>
                 <li className="m-5 flex flex-row">
                     {/* <Link to="/cart"> */}
