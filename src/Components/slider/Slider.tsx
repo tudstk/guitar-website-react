@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import slide1 from './V16Vinter.jpg';
 import slide2 from './Zgkis6lA.jpeg';
 import slide3 from './Solar-banner-A1-6ETCB.jpg';
 import slide4 from './pic3.jpg';
 import slide5 from './Solar-banner-all_new_batch_may18.jpg';
-import { Link } from "react-router-dom";
 import MobileNavbar from "../navbar/MobileNavbar";
 
 const SimpleSlider = () => {
