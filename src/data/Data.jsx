@@ -14,6 +14,19 @@ const list = [
         price:235,
         img:JacksonJS227,
         amount:1,
+        specs:{
+            brand:"Jackson",
+            stringNumber:"7",
+            body:"Poplar",
+            fretboard:"Amaranth",
+            frets:"Jumbo",
+            fretNumber:"24",
+            nutWidth:"47.6mm",
+            scale:"673mm",
+            pickups:"2 Jackson humbuckers",
+            switch:"3-way switch",
+            colour:"Matte black"
+        }
     },
     {
         id:2,
@@ -21,6 +34,19 @@ const list = [
         price:499,
         img:IbanezSteveVai,
         amount:1,
+        specs:{
+            brand:"Ibanez",
+            stringNumber:"7",
+            body:"Alder",
+            fretboard:"Amaranth",
+            frets:"Jumbo frets / Premium fret edge treatment",
+            fretNumber:"24",
+            nutWidth:"47.6mm",
+            scale:"648mm",
+            pickups:"DiMarzio Evolution",
+            switch:"5-way",
+            colour:"White"
+        }
     },
     {
         id:3,
@@ -28,6 +54,19 @@ const list = [
         price:419,
         img:IbanezLagoonBurst,
         amount:1,
+        specs:{
+            brand:"Ibanez",
+            stringNumber:"6",
+            body:"Mahogany",
+            fretboard:"Jatoba",
+            frets:"Jumbo",
+            fretNumber:"24",
+            nutWidth:"43mm",
+            scale:"648mm",
+            pickups:"2 Quantum humbuckers (neck and bridge)",
+            switch:"5-way",
+            colour:"BLF Blue Lagoon Burst Flat"
+        }
     },
     {
         id:4,
@@ -35,6 +74,19 @@ const list = [
         price:290,
         img:JacksonJS327,
         amount:1,
+        specs:{
+            brand:"Jackson",
+            stringNumber:"7",
+            body:"Poplar",
+            fretboard:"Amaranth",
+            frets:"Jumbo",
+            fretNumber:"24",
+            nutWidth:"47.6mm",
+            scale:"673mm",
+            pickups:"2 High Output Jackson humbuckers",
+            switch:"3-way switch",
+            colour:"Snow White"
+        }
     },
     {
         id:5,
@@ -42,6 +94,19 @@ const list = [
         price:210,
         img:IbanezGRX6,
         amount:1,
+        specs:{
+            brand:"Ibanez",
+            stringNumber:"6",
+            body:"Poplar",
+            fretboard:"Treated New Zealand Pine/White Dot Inlay",
+            frets:"Medium",
+            fretNumber:"22",
+            nutWidth:"42mm",
+            scale:"563mm",
+            pickups:"2 Infinity R pickups",
+            switch:"5-way switch",
+            colour:"Transparent Violet Sunburst"
+        }
     },
     {
         id:6,
@@ -49,6 +114,19 @@ const list = [
         price:1149,
         img:ESPKirkHammet,
         amount:1,
+        specs:{
+            brand:"ESP",
+            stringNumber:"6",
+            body:"Alder",
+            fretboard:"Macassar Ebony (Diospyros celebica)",
+            frets:"Extra-Jumbo",
+            fretNumber:"24",
+            nutWidth:"42mm",
+            scale:"648mm",
+            pickups:"2 Active EMG Bone Breaker humbuckers",
+            switch:"3-way switch",
+            colour:"Black"
+        }
     },
     {
         id:7,
@@ -56,6 +134,19 @@ const list = [
         price:259,
         img:IbanezGRG6AquaBurst,
         amount:1,
+        specs:{
+            brand:"Ibanez",
+            stringNumber:"6",
+            body:"Okoume",
+            fretboard:"Purple Heart",
+            frets:"Jumbo",
+            fretNumber:"24",
+            nutWidth:"43mm",
+            scale:"648mm",
+            pickups:"2 IBZ 6 humbuckers",
+            switch:"5-way",
+            colour:"Aqua Blue"
+        }
     },
     {
         id:8,
@@ -63,6 +154,19 @@ const list = [
         price:749,
         img:YamahaPacifica,
         amount:1,
+        specs:{
+            brand:"Yamaha",
+            stringNumber:"6",
+            body:"Alder",
+            fretboard:"Rosewood",
+            frets:"Jumbo",
+            fretNumber:"22",
+            nutWidth:"43mm",
+            scale:"648mm",
+            pickups:"1 x Duncan SP 90 pickup and 1 x Duncan custom 5 pickup",
+            switch:"3-way",
+            colour:"Black"
+        }
     },
 ]
 
