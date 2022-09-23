@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from 'react';
 import Navbar from './Components/navbar/Navbar';
+import SearchBar from './Components/search bar/SearchBar';
 import Login from './Components/login/Login';
 import SignUp from './Components/signup/SignUp';
 import Cart from './Components/cart/Cart2';
@@ -42,6 +43,7 @@ function App() {
         <Route path="/" element = {
           <div className="App">
             <Navbar setShow={setShow} size={cart.length}/>
+            {show ? <SearchBar placeholder="Search..." data={list}/> : null }
             {show ? <SimpleSlider/> : null}
             {/* {show ? <WelcomeSection/> : null} */}
             {show ? (<Products2 handleClick={handleClick}/>) : (<Cart cart={cart} setCart={setCart} handleChange={handleChange}/>) }

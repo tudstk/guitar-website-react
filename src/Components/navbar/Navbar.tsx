@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
+import list from "../data2/Data2";
+import SearchBar from "../search bar/SearchBar";
 import accountIcon from './account-icon.png';
 import shoppingCartIcon from './shopping-cart-icon.png';
 import igIcon from './ig.png';
@@ -28,8 +30,7 @@ const Navbar = ({setShow, size}:any) => {
                 </li>
                 <li className="hidden md:block m-5 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">CONTACT</li>
             </ul>
-            <input placeholder="Search..." className="hidden md:block w-80 h-8 text-slate-900 opacity-90 p-4 pl-6 rounded-3xl focus:outline-0 focus:opacity-100">
-            </input>
+            {/* SEARCH BAR */}
             <ul className='flex flex-row justify-between content-center mr-2 md:mr-32'>
                 
                 <li className="m-5">
