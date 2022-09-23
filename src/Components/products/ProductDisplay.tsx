@@ -10,13 +10,14 @@ const ProductDisplay = ({ list }:any) => {
             <section className='bg-div-gray min-h-screen'>
                     {list.filter((card:any) => card.title === title).map((card:any,index:any)=>
                     (
-                        <div className='flex flex-row p-16 justify-center items-center pt-20'>
-                            <div className='p-12 w-60  bg-navbar-black rounded-md'>
+                        <div className='flex flex-col justify-center items-center pt-20 md:flex-row md:p-16'>
+                            <h1 className='block text-center md:hidden text-slate-300 font-bold text-2xl'>{ card.title }</h1>
+                            <div className='p-10 w-48 mt-6 md:p-12 md:w-60  bg-navbar-black rounded-md md:mt-4'>
                                 <img src={ card.img } alt=''/>
                             </div>
-                            <div className='w-144 ml-20'>
-                                <h1 className='text-slate-300 font-bold text-3xl'>{ card.title }</h1>
-                                <h3 className='text-md mt-4 font-bold text-slate-300/90'>Description:</h3>
+                            <div className='p-10 md:w-144 md:ml-20'>
+                                <h1 className='hidden md:block text-slate-300 font-bold text-3xl'>{ card.title }</h1>
+                                <h3 className='text-md mt-0 md:mt-4 font-bold text-slate-300/90'>Description:</h3>
                                 <p className='text-slate-300/50 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex asperiores expedita aut! Quas excepturi quaerat deserunt natus, id expedita itaque cumque dicta. Veniam facere neque, nihil tempore fuga repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsum maiores officia aliquam, repudiandae nobis, in hic ab tempora molestias voluptatem non! Qui numquam voluptas nulla, officia facere illo repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid enim, eveniet unde aut id explicabo, laborum ex blanditiis quisquam molestias officia et placeat assumenda, velit excepturi aspernatur ut maiores fugiat.
                                 </p>
                                 <div>
