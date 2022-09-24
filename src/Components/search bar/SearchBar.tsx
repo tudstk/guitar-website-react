@@ -33,22 +33,22 @@ function SearchBar({placeholder, data}:any) {
   }
 
   return (
-    <div className='mt-20 flex flex-col justify-center items-center'>
+    <div className='flex flex-col justify-center items-center'>
       <div className='flex flex-col'>
         <div className='flex'>
             <input placeholder={placeholder} 
-            className="hidden md:block md:bg-navbar-black-2 w-80 h-8 text-slate-200 opacity-80 p-4 pl-6 rounded-l-3xl focus:outline-0 focus:opacity-100"
+            className="bg-navbar-black-2 w-64 h-8 text-slate-200 opacity-80 p-4 pl-6 rounded-l-3xl focus:outline-0 focus:opacity-100"
             onChange={handleFilter}
             value={wordEntered}
             />
-            <div className='bg-navbar-black-2 h-8 rounded-r-3xl flex items-center justify-center p-2'>
-              { filteredData.length === 0 ? <SearchIcon className='opacity-80 text-slate-400'/> : <CloseIcon className='opacity-80 text-slate-400 hover:cursor-pointer hover:opacity-100' onClick={handleClose}/>}
+            <div className='bg-navbar-black-2 h-8 rounded-r-3xl md:flex items-center justify-center p-1 md:p-2'>
+              { filteredData.length === 0 ? <SearchIcon className='opacity-80  text-slate-400'/> : <CloseIcon className='opacity-80 text-slate-400 hover:cursor-pointer hover:opacity-100' onClick={handleClose}/>}
             </div>
           </div>
-          {error === true ? <div className='text-slate-400 mt-1'>No results found for your search</div> : ''}
+          {error === true ? <div className='absolute top left-2/4 top-11 bg-div-gray p-4 text-slate-400 mt-1'>No results found for your search</div> : ''}
       </div>
       { filteredData.length !== 0 && (
-        <div className='w-80 h-24 bg-navbar-black text-slate-300 overflow-hidden flex flex-col text-start '>
+        <div className='md:absolute top-12 w-64 md:w-80 h-24 bg-navbar-black text-slate-300 overflow-hidden flex flex-col text-start '>
           {filteredData.map((value:any,key:any) => {
               return (
                 <div className='hover:bg-navbar-black-2/70 px-4 py-1'>

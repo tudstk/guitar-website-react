@@ -14,6 +14,7 @@ import Footer from './Components/footer/Footer';
 import News from './Components/news/News';
 import React from 'react';
 import SimpleSlider from './Components/slider/Slider';
+import MobileSearchSection from './Components/search bar/MobileSearchSection';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import list from './data/Data';
@@ -43,8 +44,9 @@ function App() {
         <Route path="/" element = {
           <div className="App">
             <Navbar setShow={setShow} size={cart.length}/>
-            {show ? <SearchBar placeholder="Search..." data={list}/> : null }
+            {/* {show ? <SearchBar placeholder="Search..." data={list}/> : null } */}
             {show ? <SimpleSlider/> : null}
+            {show ? <MobileSearchSection/> : null}
             {/* {show ? <WelcomeSection/> : null} */}
             {show ? (<Products2 handleClick={handleClick}/>) : (<Cart cart={cart} setCart={setCart} handleChange={handleChange}/>) }
             {show ? <News/> : null}

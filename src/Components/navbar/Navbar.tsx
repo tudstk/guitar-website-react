@@ -31,6 +31,9 @@ const Navbar = ({setShow, size}:any) => {
                 <li className="hidden md:block m-5 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">CONTACT</li>
             </ul>
             {/* SEARCH BAR */}
+            <div className='hidden md:block'>
+                <SearchBar placeholder="Search..." data={list} />
+            </div>
             <ul className='flex flex-row justify-between content-center mr-2 md:mr-32'>
                 
                 <li className="m-5">

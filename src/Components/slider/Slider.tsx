@@ -34,19 +34,19 @@ const SimpleSlider = () => {
           <MobileNavbar/>
           <div className="mt-2">
             <Slider {...settings}>
-              <div className="h-40 text-white md:h-144">
+              <div className="h-44 text-white md:h-128">
                 <img src={slide1} className='w-full h-full object-cover' alt=''/>
               </div>
-              <div className="h-40 text-white md:h-144">
+              <div className="h-44 text-white md:h-128">
                 <img src={slide2} className='w-full h-full object-cover' alt=''/>
               </div>
-              <div className="h-40 text-white md:h-144">
+              <div className="h-44 text-white md:h-128">
                 <img src={slide3} className='w-full h-full object-cover' alt=''/>
               </div>
-              <div className="h-40 text-white md:h-144">
+              <div className="h-44 text-white md:h-128">
                 <img src={slide4} className='w-full h-full object-cover' alt=''/>
               </div>
-              <div className="h-40 text-white md:h-144">
+              <div className="h-44 text-white md:h-128">
                 <img src={slide5} className='w-full h-full object-cover' alt=''/>
               </div>
             </Slider>

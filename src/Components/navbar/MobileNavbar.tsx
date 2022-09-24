@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import SearchBar from '../search bar/SearchBar';
+// import list from "../data2/Data2";
 
 const MobileNavbar = () => {
     return(
-    <div>
-            <ul className='md:hidden mt-16 flex flex-row justify-center content-center text-slate-400 text-xs'>
+        <>
+            <div>
+                <ul className='md:hidden mt-16 flex flex-row justify-center content-center text-slate-400 text-xs'>
                   <li className="m-2 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">
                       <Link to='/'>
                           HOME
@@ -24,9 +27,10 @@ const MobileNavbar = () => {
                   <li className="m-2 opacity-70 transition duration-150 hover:opacity-100 cursor-pointer ease-in">
                     SUBSCRIBE
                   </li>
-
-              </ul>
-          </div>
+                </ul>
+            </div>
+            
+        </>
     )
 }
 
