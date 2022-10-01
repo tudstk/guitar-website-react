@@ -51,8 +51,9 @@ function SearchBar({placeholder, data}:any) {
         <div className='md:absolute top-12 w-64 md:w-80 h-24 bg-navbar-black text-slate-300 overflow-hidden flex flex-col text-start '>
           {filteredData.map((value:any,key:any) => {
               return (
-                <div className='hover:bg-navbar-black-2/70 px-4 py-1'>
-                  <Link to={`/products/${value.title}`}  className='hover:text-slate-50'>
+                <div className='hover:bg-navbar-black-2/70 px-4 py-1 '>
+                  <Link to={`/products/${value.title}`}  className='flex flex-row items-center hover:text-slate-50'>
+                    <img src={value.img} alt='' className='w-3 mr-2'/>
                     {value.title}
                   </Link>
                 </div>
